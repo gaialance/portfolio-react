@@ -1,0 +1,85 @@
+.homePage{
+    display: flex;
+    justify-content: center;
+}
+
+.homePageContainer {
+    margin: auto auto;
+    background-color: rgba(41, 41, 41, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.homePage h1 {
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.homePage h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.homePage h3{
+    font-size: 1.4rem;
+}
+
+.homePage h1,h2,h3{
+    letter-spacing: -1px;
+}
+
+.homePage .textWhite{
+    color: white !important;
+}
+
+.homePage a{
+    text-decoration: none;
+    color: white;
+}
+
+.homePage ul{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 20px;
+    color: white;
+}
+
+.homePage svg{
+    height: 45px;
+    width: 45px;
+    transition: 1s;
+}
+
+.homePage svg:hover{
+    cursor: pointer;
+}
+
+.homePage .button{
+    position: absolute;
+    bottom: 50px;
+    justify-content: center;
+    color: white;
+}
+
+.homePage .button svg{
+    animation: bounce 1s ease-in-out forwards infinite alternate;
+}
+
+@media (max-width:820px){
+    .homePage .button{
+        display: none;
+    }
+}
+
+@keyframes bounce {
+    100%{
+        transform: translateY(50%);
+        color: rgb(70, 169, 202);
+    }
+}

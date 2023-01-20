@@ -1,0 +1,35 @@
+footer {
+    display: block;
+    height: inherit;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    background-color: #1d1d1d;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.footer{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footerContent svg{
+    height: 35px;
+    width: 35px;
+}
+
+.footerContent svg:hover{
+    color: rgb(2, 227, 227);
+    transition: 1s;
+}
+

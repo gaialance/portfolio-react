@@ -1,0 +1,74 @@
+.contact {
+    display: flex;
+    height: 600px;
+    background-color: #2B2B2B;
+    margin: 0;
+    align-items: center;
+    text-align: left;
+}
+
+.contact h3{
+    font-size: 1rem;
+}
+
+.contact svg{
+    height: 100px;
+    width: 100px;
+}
+
+.contact input{
+    background-color: black;
+    color: white;
+}
+
+.contact form{
+    width: 100%;
+}
+
+.contact label{
+    color: white;
+}
+
+.contact label{
+    border-color: green;
+}
+
+.contact button{
+    background-color: white;
+    color: black;
+    border:none;
+}
+
+.contact button:hover{
+    background-color: rgb(0, 141, 176);
+    color: black;
+    border: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px black inset !important;
+}
+
+input:-webkit-autofill{
+    -webkit-text-fill-color: white !important;
+}
+
+.alert svg{
+    height: 20px;
+    width: 20px;
+    color: inherit;
+}
+
+@media (max-width:900px){
+    .contact .mailIcon{
+        display: none;
+    }
+
+    .contact{
+        text-align: center;
+        justify-content: center;
+    }
+}
