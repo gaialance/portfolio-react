@@ -1,7 +1,6 @@
 import React ,{
     useState,
 } from 'react';
-
 import CloseIcon from '@mui/icons-material/Close';
 
 import {
@@ -32,7 +31,6 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
   });
 
 export function Contact(){
-
     const mailIcon = icons.find( (value) => {
         if(value.name === 'mail'){
             return value
@@ -89,17 +87,22 @@ export function Contact(){
           if(formValues === undefined){
             return false;
           }
-          axios.post(
-            'https://docs.google.com/forms/d/e/1FAIpQLSfiPOE99YzBPorFhtOfXY-vVIA_HMf9R5M7hiRkZJ1jMzAbvA/formResponse',
-            {
-                "entry.843876116":formValues[1],
-                "entry.1917810644":name,
-                "entry.130830925":formValues[2],
-                "entry.1145708289":formValues[3],
+          
+          await axios({
+            method:"post",
+            url:"https://sheetdb.io/api/v1/gsubcmv0j2lwm",
+            data:{
+                Timestamp:new Date().toLocaleString(),
+                Email:formValues[1],
+                Name:name,
+                Subject:formValues[2],
+                Message:formValues[3],
             },
-          ).then((resp)=>{
+          }).then((resp) => {
             if(!resp.data){
-                console.error(resp)
+                return;
+            }else{
+                window.open(" mailto:nicholashowaiken?subject=Tips to increase remote collaboration("+formValues[2]+")&body= Hi Nicholas /n I'm "+name+"  /n Here to ask about "+formValues[3]+"")
             }
           })
     }
