@@ -11,15 +11,19 @@ import EmailIcon from '@mui/icons-material/Email';
 
 export const titles = [
     { name: 'Home', icon: <HomeIcon />,url:"/" },
+    { name: 'Introduction',icon: <HomeIcon />,url:"/"},
     { name: 'About', icon: <HomeIcon />,url:"/about" },
     { name: 'Resume', icon: <HomeIcon />,url:"/resume" },
-    { name: 'CallToAction', icon: <HomeIcon />,url:"/" },
-    { name: 'PortFolio', icon: <HomeIcon />,url:"/" },
+    // { name: 'CallToAction', icon: <HomeIcon />,url:"/" },
+    // { name: 'PortFolio', icon: <HomeIcon />,url:"/" },
     { name: 'Contact', icon: <HomeIcon />,url:"/contact" },   
 ]
 
 export const image  = [
     { name: "homePageImg" , url:process.env.PUBLIC_URL+"/nicholas-ho-background.jpg"},
+    { name: "introPageImgMask" , url:process.env.PUBLIC_URL+"/image_maskflatten.webp"},
+    { name: "introPageImg" , url:process.env.PUBLIC_URL+"/header-background-2.png"},
+    { name: "introPageImgBlackAndWhite" , url:process.env.PUBLIC_URL+"/header-background-2-black.png"},
 ]
 
 export const icons = [

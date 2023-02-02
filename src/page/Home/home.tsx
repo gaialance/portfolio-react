@@ -63,7 +63,7 @@ export function Home(){
                             })}
                         </Stack>
                         <div className='button'>
-                            <a href="#about">
+                            <a href="#introduction">
                                 {button[0].icon}
                             </a>
                         </div>

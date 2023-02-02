@@ -1,0 +1,67 @@
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.mask-container{
+    position: relative;
+    display:block;
+}
+
+.color-image{
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-image: url('../../public/header-background-2.jpg');
+
+    mask-image: url('../../public/image_maskflatten.png');
+    mask-size: cover;
+}
+
+.mask-animation{
+    animation: addColor 1000ms steps(21) forwards;
+}
+
+.titleContainer{
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: white;
+    background-color: rgba(0, 0, 0,0.75);
+    background-color: rgb(0, 0, 0,0.75);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titleButton{
+    font-family: 'Libre Baskerville', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    height: 2em;
+    color: white;
+    padding-top: 10px;
+    border-radius: 20em;
+    background-color: rgba(0, 0, 0,0.75);
+    background-color: rgb(0, 0, 0,0.75);
+}
+
+.titleButton:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+@keyframes addColor{
+    0%{
+        mask-position: 0% 0%
+    }
+
+    100%{
+        mask-position: 100% 0%
+    }
+}
