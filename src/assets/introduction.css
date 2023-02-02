@@ -12,9 +12,9 @@ img {
     position: absolute;
     inset: 0;
     background-size: cover;
-    background-image: url('../../public/header-background-2.jpg');
+    background-image: url('./../../public/header-background-2.jpg');
 
-    mask-image: url('../../public/image_maskflatten.png');
+    mask-image: url('./../../public/image_maskflatten.png');
     mask-size: cover;
 }
 

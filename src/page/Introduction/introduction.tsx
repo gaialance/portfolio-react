@@ -14,8 +14,6 @@ const homePageBlackAndWhite:string|undefined = image.find( (value)=>{
 
 export function Introduction(){
     const scrollY = useScrollYPos();
-    
-    console.log(scrollY);
     if(scrollY > 900 && scrollY < 2130){
         document.querySelector(".color-image")?.classList.add("mask-animation");
     }
