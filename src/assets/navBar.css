@@ -68,6 +68,11 @@ a {
     width: 20%;
 }
 
+.site-title:hover {
+    color: black !important;
+    padding-left: 1rem;
+}
+
 
 @media (max-width:820px){
     .nav {

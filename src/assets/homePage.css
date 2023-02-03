@@ -75,6 +75,10 @@
     .homePage .button{
         display: none;
     }
+
+    .homePage h1{
+        font-size: 3em;
+    }
 }
 
 @keyframes bounce {
